@@ -1,4 +1,4 @@
-NAME		=	basic
+NAME		=	basics
 
 CC			=	c++
 
