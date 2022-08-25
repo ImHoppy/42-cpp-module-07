@@ -26,6 +26,8 @@ inline void testType(T first, T second)
 	std::cout << "\n";
 
 	::swap<T>(a, b);
+	std::cout << "swap( " << GREEN(b) << ", " << GREEN(a) << " ) = " << GREEN(a) << ", " << GREEN(sb) << "\n\n";
+
 	testPrint<T>(a, b);
 	std::cout << "\n";
 
