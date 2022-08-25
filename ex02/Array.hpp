@@ -11,7 +11,7 @@ class Array
 	public:
 /* ------------------------------- CONSTRUCTOR ------------------------------ */
 
-		Array() : _array(new T[0]), _size(0) {};
+		Array() : _array(NULL), _size(0) {};
 
 		Array( Array const & src )
 		{
@@ -28,6 +28,7 @@ class Array
 		~Array()
 		{
 			delete[] _array;
+			_array = NULL;
 		};
 
 
