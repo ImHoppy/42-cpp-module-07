@@ -4,7 +4,7 @@
 # include <cstddef>
 
 template<typename T, typename S>
-void	iter( T table[], S const size, void(f)(T &) )
+void	iter( T table[], const S size, void(f)(T &) )
 {
 	for (S i = 0; i < size; i++)
 		f(table[i]);
